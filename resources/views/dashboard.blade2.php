@@ -4,9 +4,9 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center" style="max-height: 100px; overflow: hidden;">
+                <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" style="max-height: 100px; overflow: hidden;"/>
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
                     </a>
                 </div>
 
@@ -18,7 +18,9 @@
                     <x-nav-link :href="route('chatify')" :active="request()->routeIs('chatify')">
                         {{ __('Chat') }}
                     </x-nav-link>
-                    
+                    <x-nav-link :href="route('dashboard2')" :active="request()->routeIs('dashboard2')">
+                        {{ __('Chat') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -102,3 +104,26 @@
         </div>
     </div>
 </nav>
+
+
+
+
+<x-app-layout>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
+            {{ __('Moja oś czasu') }}
+        </h2>
+    
+    </x-slot>
+
+    <div class="py-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
+                <div class="p-6 text-gray-900 dark:text-gray-100">
+                    {{ __("Jesteś zalogowany!") }}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</x-app-layout>

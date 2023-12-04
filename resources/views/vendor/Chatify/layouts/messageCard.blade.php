@@ -13,6 +13,7 @@ $timeAndSeen = "<span data-time='$created_at' class='message-time'>
         </div>
     @endif
     {{-- Card --}}
+    
     <div class="message-card-content">
         @if (@$attachment->type != 'image' || $message)
             <div class="message">

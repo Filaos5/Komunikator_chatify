@@ -34,7 +34,7 @@
       <div class="app-modal-container">
           <div class="app-modal-card" data-name="settings" data-modal='0'>
               <form id="update-settings" action="{{ route('avatar.update') }}" enctype="multipart/form-data" method="POST">
-                  @csrf
+               <!--   @csrf -->
                   {{-- <div class="app-modal-header">Update your profile settings</div> --}}
                   <div class="app-modal-body">
                       {{-- Udate profile avatar --}}

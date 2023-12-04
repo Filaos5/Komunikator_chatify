@@ -4,6 +4,11 @@
 <div class="messenger-infoView-btns">
     <a href="#" class="danger delete-conversation">Delete Conversation</a>
 </div>
+
+<div class="p-6 text-gray-900 dark:text-gray-100">
+
+                    {{ __("Jesteś zalogowany 222!") }}
+                </div>
 {{-- shared photos --}}
 <div class="messenger-infoView-shared">
     <p class="messenger-title"><span>Shared Photos</span></p>

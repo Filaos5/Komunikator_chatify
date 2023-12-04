@@ -18,11 +18,23 @@
 
 {{-- styles --}}
 <link rel='stylesheet' href='https://unpkg.com/nprogress@0.2.0/nprogress.css'/>
-<link href="{{ asset('css/chatify/style.css') }}" rel="stylesheet" />
+<link href="{{ asset('css/chatify/style.css') }}" rel="stylesheet" /> 
 <link href="{{ asset('css/chatify/'.$dark_mode.'.mode.css') }}" rel="stylesheet" />
 <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
 
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+  
+ <span style="color:white;">       
+<!--
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">  
+        @include('layouts.navigation')
+        </div> 
+-->
+</span>
 {{-- Setting messenger primary color to css --}}
+
+
+
 <style>
     :root {
         --primary-color: {{ $messengerColor }};
