@@ -26,6 +26,11 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request): RedirectResponse
     {
         $request->authenticate();
+        $_SESSION['zalogowany']=$request;
+        $host= "localhost";
+        $db_user= "root";
+        $db_password= "";
+        $db_name= "laravel_chatify";
 
         $request->session()->regenerate();
 
