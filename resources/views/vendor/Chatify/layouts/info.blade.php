@@ -7,7 +7,7 @@
 
 <div class="p-6 text-gray-900 dark:text-gray-100">
 
-                    {{ __("Jesteś zalogowany 222!") }}
+                    {{ __("Jesteś zalogowany!") }}
                 </div>
 {{-- shared photos --}}
 <div class="messenger-infoView-shared">
