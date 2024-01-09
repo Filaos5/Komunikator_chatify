@@ -10,12 +10,13 @@
             </td>
             
             <td>
-                <p data-id="<?php echo e(Auth::user()->id); ?>" data-type="user">Saved Messages <span>You</span></p>
-                <span>Save messages secretly</span>
+                <p data-id="<?php echo e(Auth::user()->id); ?>" data-type="user">Zapisane wiadomości <span>Ty</span></p>
+                <span>Zapisuj wiadomości w tajemnicy</span>
             </td>
         </tr>
     </table>
 <?php endif; ?>
+
 
 
 <?php if($get == 'users' && !!$lastMessage): ?>

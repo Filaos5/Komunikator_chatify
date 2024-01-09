@@ -5,6 +5,12 @@
     <a href="#" class="danger delete-conversation">Delete Conversation</a>
 </div>
 
+<div class="p-6 text-gray-900 dark:text-gray-100">
+
+                    <?php echo e(__("Jesteś zalogowany!")); ?>
+
+                </div>
+
 <div class="messenger-infoView-shared">
     <p class="messenger-title"><span>Shared Photos</span></p>
     <div class="shared-photos-list"></div>

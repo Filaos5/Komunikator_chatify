@@ -34,7 +34,7 @@
       <div class="app-modal-container">
           <div class="app-modal-card" data-name="settings" data-modal='0'>
               <form id="update-settings" action="<?php echo e(route('avatar.update')); ?>" enctype="multipart/form-data" method="POST">
-                  <?php echo csrf_field(); ?>
+               <!--   <?php echo csrf_field(); ?> -->
                   
                   <div class="app-modal-body">
                       

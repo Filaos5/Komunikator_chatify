@@ -18,9 +18,21 @@
 
 
 <link rel='stylesheet' href='https://unpkg.com/nprogress@0.2.0/nprogress.css'/>
-<link href="<?php echo e(asset('css/chatify/style.css')); ?>" rel="stylesheet" />
+<link href="<?php echo e(asset('css/chatify/style.css')); ?>" rel="stylesheet" /> 
 <link href="<?php echo e(asset('css/chatify/'.$dark_mode.'.mode.css')); ?>" rel="stylesheet" />
 <link href="<?php echo e(asset('css/app.css')); ?>" rel="stylesheet" />
+
+        <?php echo app('Illuminate\Foundation\Vite')(['resources/css/app.css', 'resources/js/app.js']); ?>
+  
+ <span style="color:white;">       
+<!--
+        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">  
+        <?php echo $__env->make('layouts.navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        </div> 
+-->
+</span>
+
+
 
 
 <style>
